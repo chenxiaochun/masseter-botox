@@ -1,0 +1,33 @@
+{
+  "common": {
+    "appName": "Masseter Botox 专业医疗",
+    "bookNow": "立即预约",
+    "learnMore": "了解更多"
+  },
+  "navigation": {
+    "home": "首页",
+    "about": "关于治疗",
+    "process": "治疗流程",
+    "results": "效果展示",
+    "faq": "常见问题",
+    "doctors": "医生团队",
+    "contact": "联系预约",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
+  },
+  "home": {
+    "heroTitle": "专业的 Masseter Botox\n咬肌注射服务",
+    "heroDescription": "我们提供安全、专业的咬肌注射服务，帮助您实现理想的面部轮廓，提升自信。",
+    "coreAdvantages": "核心优势",
+    "advantageTitle1": "专业医疗团队",
+    "advantageDescription1": "经验丰富的专业医疗团队，确保治疗安全可靠。",
+    "advantageTitle2": "个性化治疗方案",
+    "advantageDescription2": "根据每个人的情况定制专属治疗方案，达到最佳效果。",
+    "advantageTitle3": "舒适治疗环境",
+    "advantageDescription3": "现代化舒适的治疗环境，让您在轻松的氛围中接受治疗。"
+  },
+  "footer": {
+    "copyright": "© {{year}} 版权所有",
+    "companyName": "Masseter Botox 专业医疗"
+  }
+}

@@ -1,0 +1,61 @@
+"use client";
+import React, { createContext, useContext, Suspense } from 'react';
+
+// 定义支持的语言列表
+export const supportedLocales = ['zh', 'en'] as const;
+
+export type Locale = typeof supportedLocales[number];
+
+// 创建语言上下文
+interface LocaleContextType {
+  locale: Locale;
+}
+
+const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
+
+// 导出用于获取当前语言的Hook
+export function useLocale() {
+  const context = useContext(LocaleContext);
+  if (!context) {
+    throw new Error('useLocale must be used within a LocaleProvider');
+  }
+  return context.locale;
+}
+
+// 多语言布局组件
+export default function LocaleLayout({
+  children,
+  params
+}) {
+  // 使用React.use()解包params.locale Promise
+  const locale = React.use(params)?.locale as Locale;
+
+  // 验证语言是否支持
+  if (!supportedLocales.includes(locale)) {
+    return (
+      <html lang="zh">
+        <body>
+          <div className="p-4">
+            <h1>不支持的语言</h1>
+            <p>请选择支持的语言：</p>
+            <ul>
+              {supportedLocales.map((lang) => (
+                <li key={lang}>
+                  <a href={`/${lang}`}>{lang === 'zh' ? '中文' : 'English'}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </body>
+      </html>
+    );
+  }
+
+  return (
+    <LocaleContext.Provider value={{ locale }}>
+      <html lang={locale}>
+        <body>{children}</body>
+      </html>
+    </LocaleContext.Provider>
+  );
+}

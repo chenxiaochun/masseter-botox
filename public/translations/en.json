@@ -1,0 +1,33 @@
+{
+  "common": {
+    "appName": "Masseter Botox Professional",
+    "bookNow": "Book Now",
+    "learnMore": "Learn More"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About Treatment",
+    "process": "Treatment Process",
+    "results": "Results Gallery",
+    "faq": "FAQ",
+    "doctors": "Our Team",
+    "contact": "Contact & Book",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu"
+  },
+  "home": {
+    "heroTitle": "Professional Masseter Botox\nJaw Slimming Services",
+    "heroDescription": "We provide safe and professional masseter botox services to help you achieve your ideal facial contour and boost your confidence.",
+    "coreAdvantages": "Core Advantages",
+    "advantageTitle1": "Professional Medical Team",
+    "advantageDescription1": "Experienced professional medical team ensuring safe and reliable treatments.",
+    "advantageTitle2": "Personalized Treatment Plans",
+    "advantageDescription2": "Customized treatment plans based on individual needs to achieve optimal results.",
+    "advantageTitle3": "Comfortable Environment",
+    "advantageDescription3": "Modern and comfortable treatment environment for a relaxing experience."
+  },
+  "footer": {
+    "copyright": "© {{year}} All Rights Reserved",
+    "companyName": "Masseter Botox Professional"
+  }
+}
