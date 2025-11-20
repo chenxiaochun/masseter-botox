@@ -26,36 +26,34 @@ export function useLocale() {
 export default function LocaleLayout({
   children,
   params
+}: {
+  children: React.ReactNode;
+  params: { locale: Promise<string> };
 }) {
-  // 使用React.use()解包params.locale Promise
-  const locale = React.use(params)?.locale as Locale;
+  // 使用React.use()正确解包params Promise
+  const resolvedParams = React.use(params) as { locale: string };
+  const locale = resolvedParams?.locale as Locale;
 
   // 验证语言是否支持
   if (!supportedLocales.includes(locale)) {
     return (
-      <html lang="zh">
-        <body>
-          <div className="p-4">
-            <h1>不支持的语言</h1>
-            <p>请选择支持的语言：</p>
-            <ul>
-              {supportedLocales.map((lang) => (
-                <li key={lang}>
-                  <a href={`/${lang}`}>{lang === 'zh' ? '中文' : 'English'}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </body>
-      </html>
+      <div className="p-4">
+        <h1>不支持的语言</h1>
+        <p>请选择支持的语言：</p>
+        <ul>
+          {supportedLocales.map((lang) => (
+            <li key={lang}>
+              <a href={`/${lang}`}>{lang === 'zh' ? '中文' : 'English'}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   }
 
   return (
     <LocaleContext.Provider value={{ locale }}>
-      <html lang={locale}>
-        <body>{children}</body>
-      </html>
+      {children}
     </LocaleContext.Provider>
   );
 }
