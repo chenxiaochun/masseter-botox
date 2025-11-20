@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">Masseter Botox 注射治疗示意图</text>
+  
+  <!-- 半侧人脸轮廓 -->
+  <g transform="translate(400, 300)">
+    <!-- 面部轮廓 -->
+    <path d="M 0,0 C -50,-100 -120,-100 -170,-50 C -200,0 -200,50 -180,100 C -160,150 -130,200 -100,230 C -70,260 -30,280 0,290 C 20,300 40,310 60,320 C 80,330 100,340 120,350" 
+          fill="none" stroke="#2c3e50" stroke-width="3"/>
+    
+    <!-- 下颌轮廓 -->
+    <path d="M 0,290 C 20,300 40,310 60,320 C 80,330 100,340 120,350" 
+          fill="none" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- 咬肌区域（注射目标） -->
+    <path d="M 100,160 C 150,180 160,220 140,260 C 120,300 80,310 60,320" 
+          fill="rgba(255,99,71,0.2)" stroke="#ff6347" stroke-width="2" stroke-dasharray="5,3"/>
+    
+    <!-- 标注咬肌 -->
+    <text x="180" y="220" font-family="Arial, sans-serif" font-size="16" fill="#ff6347">咬肌 (Masseter)</text>
+    <line x1="140" y1="220" x2="170" y2="220" stroke="#ff6347" stroke-width="1" stroke-dasharray="2,2"/>
+    
+    <!-- 注射点 -->
+    <circle cx="120" cy="200" r="3" fill="#e74c3c"/>
+    <circle cx="140" cy="240" r="3" fill="#e74c3c"/>
+    <circle cx="100" cy="240" r="3" fill="#e74c3c"/>
+    
+    <!-- 注射针 -->
+    <line x1="170" y1="180" x2="120" y2="200" stroke="#34495e" stroke-width="1" stroke-dasharray="2,1"/>
+    <polygon points="170,180 175,175 170,170" fill="#34495e"/>
+    
+    <!-- 效果说明 - 治疗前 -->
+    <g transform="translate(-220, 0)">
+      <path d="M 0,290 C 20,300 40,310 60,320 C 80,330 100,340 120,350" 
+            fill="none" stroke="#3498db" stroke-width="4" stroke-linecap="round"/>
+      <text x="60" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#34495e">治疗前</text>
+      <text x="60" y="400" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">咬肌发达，下颌宽大</text>
+    </g>
+    
+    <!-- 效果说明 - 治疗后 -->
+    <g transform="translate(180, 0)">
+      <path d="M 0,290 C 5,300 10,310 15,320 C 20,330 40,340 60,350" 
+            fill="none" stroke="#2ecc71" stroke-width="4" stroke-linecap="round"/>
+      <text x="60" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#34495e">治疗后</text>
+      <text x="60" y="400" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">咬肌萎缩，V型轮廓</text>
+    </g>
+  </g>
+  
+  <!-- 治疗原理说明 -->
+  <g transform="translate(100, 450)">
+    <rect x="0" y="0" width="600" height="120" rx="5" ry="5" fill="white" stroke="#ddd"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">治疗原理</text>
+    <text x="20" y="60" font-family="Arial, sans-serif" font-size="14" fill="#34495e">• 肉毒杆菌素注射到咬肌（Masseter Muscle）中，阻断神经信号传导</text>
+    <text x="20" y="85" font-family="Arial, sans-serif" font-size="14" fill="#34495e">• 咬肌逐渐放松并萎缩，从而缩小下颌宽度，形成更柔和的面部轮廓</text>
+    <text x="20" y="110" font-family="Arial, sans-serif" font-size="14" fill="#34495e">• 效果通常在注射后2-4周开始显现，可持续3-6个月</text>
+  </g>
+  
+  <!-- 医学标记 -->
+  <text x="700" y="580" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#7f8c8d">医学示意图 • 仅供参考</text>
+</svg>

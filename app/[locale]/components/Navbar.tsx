@@ -29,23 +29,10 @@ const Navbar: React.FC = () => {
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          {/* Logo 和语言切换 */}
-          <div className="flex items-center gap-6">
+          {/* Logo */}
+          <div className="flex items-center">
             <div>
               <span className="text-[#1976D2] font-bold text-2xl">{t('common.appName')}</span>
-            </div>
-            
-            {/* 语言切换器 - 桌面端 */}
-            <div className="hidden md:flex items-center bg-blue-50 rounded-lg overflow-hidden">
-              {supportedLocales.map((lang) => (
-                <button
-                  key={lang}
-                  onClick={() => handleLanguageChange(lang)}
-                  className={`px-3 py-1 text-sm transition-colors ${lang === locale ? 'bg-[#1976D2] text-white' : 'text-[#0D47A1] hover:bg-blue-100'}`}
-                >
-                  {lang === 'zh' ? '中文' : 'EN'}
-                </button>
-              ))}
             </div>
           </div>
 
