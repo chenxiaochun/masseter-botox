@@ -51,7 +51,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <nav className="flex items-center gap-1 text-sm">
               <a href="/masseter" className="px-3.5 py-2 rounded-lg text-background/60 hover:text-background hover:bg-background/10 transition-all cursor-pointer">
-                Masseter
+                Calculator
+              </a>
+              <a href="/masseter/guide" className="px-3.5 py-2 rounded-lg text-background/60 hover:text-background hover:bg-background/10 transition-all cursor-pointer">
+                Guides
               </a>
               <a href="/about" className="px-3.5 py-2 rounded-lg text-background/60 hover:text-background hover:bg-background/10 transition-all cursor-pointer">
                 About
