@@ -66,6 +66,39 @@ const HOW_TO_STEPS = [
   { icon: CalcIcon,     n: '04', title: 'Get Estimate',    text: 'Tap Calculate for your personalised result.' },
 ]
 
+const GUIDE_LINKS = [
+  {
+    href: '/masseter/guide',
+    title: 'Complete Guide',
+    desc: 'What masseter botox is, how it works, and who it suits.',
+  },
+  {
+    href: '/masseter/cost',
+    title: 'Cost Guide',
+    desc: 'Typical prices in the US, UK, Australia, and Canada.',
+  },
+  {
+    href: '/masseter/units',
+    title: 'Units & Dosage',
+    desc: 'How many units you need for jaw slimming or bruxism.',
+  },
+  {
+    href: '/masseter/before-after',
+    title: 'Before & After',
+    desc: 'Week-by-week results timeline from day 1 to month 3.',
+  },
+  {
+    href: '/masseter/recovery',
+    title: 'Recovery Guide',
+    desc: 'Aftercare instructions and side effects to watch for.',
+  },
+  {
+    href: '/masseter/bruxism',
+    title: 'Bruxism Guide',
+    desc: 'How botox treats teeth grinding — dosage and results.',
+  },
+]
+
 export default function MasseterPage() {
   return (
     <>
@@ -199,6 +232,32 @@ export default function MasseterPage() {
             </div>
             <div className="max-w-2xl mx-auto">
               <FAQ items={faqs} />
+            </div>
+          </section>
+
+          {/* Learn More */}
+          <section className="mt-10">
+            <div className="text-center mb-6">
+              <h2 className="font-heading text-2xl font-bold text-foreground mb-2">
+                Learn More About Masseter Botox
+              </h2>
+              <p className="text-sm text-muted-foreground">
+                In-depth guides to help you make an informed decision.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {GUIDE_LINKS.map(({ href, title, desc }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="bg-card rounded-2xl p-4 ring-1 ring-border hover:ring-primary/40 hover:-translate-y-0.5 hover:shadow-md transition-all group"
+                >
+                  <p className="text-sm font-semibold text-foreground mb-1 group-hover:text-primary transition-colors">
+                    {title}
+                  </p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
+                </a>
+              ))}
             </div>
           </section>
 
