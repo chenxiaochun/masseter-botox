@@ -3,7 +3,7 @@ import { ShieldCheck, AlertTriangle } from 'lucide-react'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Masseter Botox Recovery & Side Effects: Complete Aftercare Guide | BotoxCalc',
+  title: 'Masseter Botox Recovery & Aftercare Guide (2025) | BotoxCalc',
   description:
     'Masseter botox recovery is minimal—most patients return to work the same day. Learn aftercare instructions, common side effects, and when to contact your provider.',
   alternates: { canonical: '/masseter/recovery' },

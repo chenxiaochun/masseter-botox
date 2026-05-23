@@ -5,10 +5,10 @@ export default function GuidesLayout({ children }: { children: React.ReactNode }
     <>
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="bg-secondary border-b border-border">
-        <ol className="max-w-3xl mx-auto px-5 py-2.5 flex items-center gap-1.5 text-xs text-muted-foreground list-none">
+        <ol role="list" className="max-w-3xl mx-auto px-5 py-2.5 flex items-center gap-1.5 text-xs text-muted-foreground list-none">
           <li><a href="/" className="hover:text-foreground transition-colors">BotoxCalc</a></li>
           <li aria-hidden="true"><ChevronRight className="w-3 h-3" /></li>
-          <li aria-current="page" className="text-foreground font-medium">Masseter Botox</li>
+          <li className="text-foreground font-medium">Masseter Botox</li>
         </ol>
       </nav>
 
