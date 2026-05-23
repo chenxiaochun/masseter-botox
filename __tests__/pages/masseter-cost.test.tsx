@@ -18,6 +18,6 @@ describe('Masseter Cost Page', () => {
     render(<CostPage />)
     expect(screen.getByText('United States')).toBeInTheDocument()
     expect(screen.getByText('United Kingdom')).toBeInTheDocument()
-    expect(screen.getByText('Canada')).toBeInTheDocument()
+    expect(screen.getByText('Australia')).toBeInTheDocument()
   })
 })
