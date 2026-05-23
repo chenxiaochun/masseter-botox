@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: '%s | BotoxCalc',
   },
   description: 'Free Botox unit and cost calculator. Estimate how many units you need and what it will cost for any treatment area.',
-  metadataBase: new URL('https://yourdomain.com'),
+  metadataBase: new URL('https://seoer.vercel.app'),
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
