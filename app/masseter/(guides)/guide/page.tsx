@@ -17,7 +17,6 @@ const articleSchema = {
     'A comprehensive guide to masseter botox covering how it works, candidacy, dosage, results timeline, and risks.',
   author: { '@type': 'Organization', name: 'BotoxCalc' },
   datePublished: '2026-05-23',
-  url: 'https://seoer.vercel.app/masseter/guide',
 }
 
 const faqs = [
